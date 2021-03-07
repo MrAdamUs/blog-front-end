@@ -33,7 +33,7 @@ const ArticlePage = ({ match }) => {
       {article.content.map((paragraph, i) => (
         <p key={i}>{paragraph}</p>
       ))}
-      <AddCommentForm />
+      <AddCommentForm setArticleInfo={setArticleInfo} articalesName={name} />
 
       <CommentsList comments={articleInfo.comments} />
 
